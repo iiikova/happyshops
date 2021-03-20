@@ -1,0 +1,84 @@
+// === header === //
+.section-header {
+    width: 100%;
+    background: rgb(123, 31, 162);
+        .section-header-wrap {
+            .section-header-title {
+                height: 80px;
+                    h1 {
+                    padding-top: 10px;
+                    color: white;
+                    font-size: 29px;
+                    font-weight: bold;
+                    line-height: 32px;
+                        }
+                    }
+                    .section-header-img img{
+                        border-top: 2px solid white;
+                        border-bottom: 2px solid white;
+                        width: 100%;
+                    }
+        .section-header-dicount {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            color: white;
+            height: 80px;
+            margin-top: -50px;
+
+            .section-header-dicount-left {
+                padding: 6px 100px 0 50px;
+                border-radius: 40px 0 0 40px;
+                background: #3c7298;
+                text-decoration: line-through;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .section-header-dicount-left-text {
+                    font-size: 12px;
+                }
+                .section-header-dicount-left-price {
+                    font-size: 23px;
+                }
+            }
+            .section-header-dicount-center {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: #f9c802;
+                    width: 94px;
+                    font-size: 23px;
+                    color: black;
+                    height: 94px;
+                    font-weight: 700;
+                    position: absolute;
+                    top: -6px;
+                    left: 50%;
+                    margin-left: -47px;
+                    border-radius: 50%;
+                    
+
+            }
+            .section-header-dicount-right {
+                padding: 10px 50px 0 50px;
+                border-radius: 0 40px  40px 0;
+                background: #ed2171;
+                text-decoration: line-through;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                    font-weight: bold;
+
+                .section-header-dicount-left-text {
+                    font-size: 12px;
+                    
+                }
+                .section-header-dicount-left-price {
+                    font-size: 23px;
+                }
+            }
+        }
+        }
+}
+
+// / === header === //

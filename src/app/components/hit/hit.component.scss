@@ -1,0 +1,65 @@
+.section-hit {
+    background: rgb(123, 31, 162);
+    .section-hit-wrapper {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        width: 90%;
+        margin: 0 auto;
+        .section-hit-title {
+            width: 190px;
+            margin: 10px auto;
+            background: #ed2150;
+            color: #fff;
+            font-weight: 700;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 28px;
+        }
+        .section-hit-list {
+            text-align: left;
+            line-height: 2rem;
+            font-size: 18px;
+            font-weight: 400;
+                ul {
+                    margin: 30px 40px 30px;
+                    li {
+                        font-size: 16px;
+                        color: #fff;
+                        // background: url(../images/check.png) no-repeat 0 2px;
+                        padding: 0 0 0 30px;
+                        margin-bottom: 12px;
+                        }
+                    }
+                }
+                .section-hit-button {
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        display: block;
+                        margin: 0 auto;
+                        width: 400px;
+                        height: 80px;
+                        border: none;
+                        -webkit-border-radius: 40px;
+                        -moz-border-radius: 40px;
+                        border-radius: 40px;
+                        background: #f9c802;
+                        -webkit-box-shadow: 0 4px 0 #f9a502;
+                        -moz-box-shadow: 0 4px 0 #f9a502;
+                        box-shadow: 0 4px 0 #f9a502;
+                        font-family: 'Gotham Pro', sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 80px;
+                        letter-spacing: 1px;
+                        color: #724b00;
+                        text-shadow: 0 2px 0 #fad334;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        text-align: center;
+    cursor: pointer;
+                    }
+                }
+            }
+        
+}

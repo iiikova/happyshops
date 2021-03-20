@@ -1,0 +1,36 @@
+.section-skills {
+    color: white;
+    background: rgb(254,82,78);
+    background: linear-gradient(177deg, rgba(254,82,78,1) 0%, rgba(206,28,116,1) 50%);
+    padding: 50px 10px ;
+
+.section-skills-wrap {
+    .section-skills-wrap-title {
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+    .section-skills-wrap-block {
+        .section-skills-wrap-block-item {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 20px;
+            width: 210px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+                .section-skills-item-icon {
+                    img {
+                        display: block;
+                        margin: 0 auto 15px;
+                        border: 7px solid rgba(249, 252, 241, 0.2);
+                        border-radius: 50%;
+                        // box-shadow: 1px 2px 5px, rgb(0 0 0 / 10%);
+                    }
+                }
+                .section-skills-item-text {
+                }
+        }
+    }
+}
+}
