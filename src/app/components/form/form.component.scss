@@ -1,107 +1,170 @@
-.section-form {
+.section-header {
+  width: 100%;
   background: rgb(123, 31, 162);
-  height: 100%;
-  padding: 50px 0;
-
-  .section-form-title {
-    font-size: 22px;
-    line-height: 42px;
-    color: white;
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-
-  .section-form-img {
-    img {
+  padding-bottom: 30px;
+  .section-header-wrap {
+    .section-header-title {
+      padding: 12px 0 0;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      h1 {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 32px;
+        display: block;
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+    .section-header-img img {
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
       width: 100%;
     }
   }
+}
 
-  .section-header-dicount {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    color: white;
-    height: 80px;
-    margin-top: -50px;
-
-    .section-header-dicount-left {
-      padding: 6px 100px 0 50px;
-      border-radius: 40px 0 0 40px;
-      background: #3c7298;
-      text-decoration: line-through;
+.section-hit {
+  background: rgb(123, 31, 162);
+  margin-top: -30px;
+  .section-hit-wrapper {
+    .section-header-dicount {
+      margin: -45px auto 25px;
+      width: 400px;
+      text-align: center;
+      position: relative;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
 
-      .section-header-dicount-left-text {
-        font-size: 12px;
+      .section-header-dicount-left {
+        padding: 0px 40px 0 0;
+        border-radius: 40px 0 0 40px;
+        background: #3c7298;
+        height: 80px;
+        width: 200px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .section-header-dicount-left-text {
+          margin: 10px 0 4px;
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+        }
+        .section-header-dicount-left-price {
+          font-size: 23px;
+          text-decoration: line-through;
+        }
       }
-
-      .section-header-dicount-left-price {
-        font-size: 23px;
+      .section-header-dicount-center {
+        padding: 28px 0 0;
+        width: 94px;
+        height: 100px;
+        background: url("../../../assets/offer__discount_bg.png") center
+          no-repeat;
+        font-weight: 700;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -47px;
+        color: #333333;
+        .center_text {
+          margin: 0 0 5px;
+          font-size: 14px;
+          line-height: 14px;
+          margin-top: 3px;
+        }
+        .center_value {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+      .section-header-dicount-right {
+        padding: 0px 0 0 40px;
+        border-radius: 0 40px 40px 0;
+        background: #ed2171;
+        font-weight: 700;
+        height: 80px;
+        width: 200px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .section-header-dicount-left-text {
+          margin: 10px 0 4px;
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .section-header-dicount-left-price {
+          font-size: 23px;
+          font-weight: 700;
+        }
       }
     }
-
-    .section-header-dicount-center {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #f9c802;
-      width: 94px;
-      font-size: 23px;
-      color: black;
-      height: 94px;
+    .section-hit-title {
+      width: 190px;
+      margin: 30px auto;
+      background: #ed2150;
+      color: #fff;
       font-weight: 700;
-      position: absolute;
-      top: -6px;
-      left: 50%;
-      margin-left: -47px;
-      border-radius: 50%;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 28px;
     }
+    .section-hit-list {
+      text-align: left;
+      line-height: 2rem;
+      font-weight: 400;
+      margin: 30px 40px 30px;
+      ul {
+        list-style: none;
+        li {
+          list-style: none;
+          font-size: 16px;
 
-    .section-header-dicount-right {
-      padding: 10px 50px 0;
-      border-radius: 0 40px 40px 0;
-      background: #ed2171;
-      text-decoration: line-through;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-weight: bold;
-
-      .section-header-dicount-left-text {
-        font-size: 12px;
-      }
-
-      .section-header-dicount-left-price {
-        font-size: 23px;
+          color: #fff;
+          background: url("../../../assets/check.png") no-repeat 0 6px;
+          padding: 0 0 0 30px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
+}
 
-  .section-form-form {
-    .section-form-form-input {
-      input {
-        display: block;
-        margin: 0 auto 25px;
-        width: 400px;
-        height: 70px;
-        border: none;
-        border-radius: 35px;
-        background: #fff;
-        font-family: "Gotham Pro", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #333;
-        outline: none;
-      }
-
-      input::placeholder {
-        padding: 0 30px;
-      }
+.section-form-form {
+  .section-form-form-input {
+    input {
+      display: block;
+      margin: 0 auto 25px;
+      width: 400px;
+      height: 70px;
+      border: none;
+      border-radius: 35px;
+      background: #fff;
+      font-family: "Gotham Pro", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #333;
+      outline: none;
     }
 
+    input::placeholder {
+      padding: 0 30px;
+    }
+  }
+  .section-form-button {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 24px;
+    background: url("../../../assets/button_shadow.png") center bottom no-repeat;
+    position: relative;
+    z-index: 10;
     button {
       display: block;
       margin: 0 auto;
@@ -121,43 +184,6 @@
       text-transform: uppercase;
       text-decoration: none;
       text-align: center;
-    }
-  }
-}
-
-.section-hit {
-  .section-hit-wrapper {
-    padding-top: 30px;
-    width: 90%;
-    margin: 0 auto;
-
-    .section-hit-title {
-      width: 190px;
-      margin: 10px auto;
-      background: #ed2150;
-      color: #fff;
-      font-weight: 700;
-      padding: 10px 0;
-      text-align: center;
-      font-size: 28px;
-    }
-
-    .section-hit-list {
-      text-align: left;
-      line-height: 2rem;
-      font-size: 18px;
-      font-weight: 400;
-
-      ul {
-        margin: 30px 40px;
-
-        li {
-          font-size: 16px;
-          color: #fff;
-          padding: 0 0 0 30px;
-          margin-bottom: 12px;
-        }
-      }
     }
   }
 }

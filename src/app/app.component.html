@@ -1,7 +1,42 @@
-<div class="container">
+<div *ngIf='isBanner' class="banner">
+  <div class="banner-close" (click)='closeBanner()'>
+    <img src="../assets/icons/close_black_24dp.svg" alt="">
+  </div>
+  <div class="banner-alert">
+    <img src="../assets/corona.png" alt="">
+    <div class="banner-alert-text">
+      <p>Действует бесконтактная доставка и передача заказов!</p>
+      <p>Мы заботимся о вашей безопасности, поэтому процесс оплаты и получения заказа производится без контакта с
+        курьером.</p>
+    </div>
+  </div>
+</div>
 
+<div class="form" *ngIf='isForm'>
+
+  <div class="form-wrap">
+    <div class="banner-close" (click)='closeForm()'>
+    </div>
+    <div class="form-title">Вам понравилось это предложение?</div>
+    <div class="form-cont">
+      <div class="form-cont_text1">Мы расскажем Вам все об этом товаре, предложим наилучшие условия и ознакомим с
+        подходящими акционными предложениями!</div>
+      <form action="">
+        <input type="text" placeholder="Введите ваше имя" />
+        <input type="text" placeholder="Введите телефон" />
+        <button>Перезвоните мне</button>
+      </form>
+      <div class="form-cont_text2">Оператор перезвонит Вам через 5-10 минут</div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<div class="container2">
   <app-header></app-header>
-  <app-hit></app-hit>
   <app-desc></app-desc>
   <app-skills></app-skills>
   <app-catalog></app-catalog>
@@ -10,5 +45,36 @@
   <app-order></app-order>
   <app-form></app-form>
   <app-footer></app-footer>
+</div>
+
+
+
+<div class="card" (click)='showForm()'>
+  <div class="card__side card__side--front">
+    <div class="card__description">
+      <img src="../assets/operator.png" alt="">
+    </div>
+  </div>
+  <div class="card__side card__side--back">
+    <div class="card__description">
+      <div class="card-img">
+        <img src="../assets/call.png" alt="">
+        <p>Бесплатный звонок</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf='isCall' class="call">
+  <div class="banner-alert">
+    <div class="banner-alert-img">
+      <div class="banner-alert-img-icon">
+        <img src="../assets/call.png" alt="">
+      </div>
+    </div>
+    <div class="banner-alert-text" (click)='showForm()'>
+      <p>Перезвоните мне</p>
+    </div>
+  </div>
 
 </div>

@@ -1,56 +1,54 @@
-.section-feedback {
-    padding: 50px 20px;
-    background: rgb(254,82,78);
-    background: linear-gradient(177deg, rgba(254,82,78,1) 0%, rgba(206,28,116,1) 50%);
-    .section-feedback-title {
-            font-size: 30px;
-            line-height: 42px;
-            color: white;
-            font-weight: bold;
-            padding-bottom: 20px;
-    }
-    .section-feetback-block {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
-                .section-feetback-block-left img {
-                    height: 60px;
-                }
-                .section-feetback-block-author   {
-                            // margin: 0 auto;
-                            padding: 13px;
-                            width: auto;
-                            height: auto;
-                            border-radius: 50%;
-                            background: rgba(255, 255, 255, 0.2);
-                            // box-shadow: 1px 2px 5px rgb(0 0 0 / 10%);
-                            // position: relative;
-                            z-index: 10;
-                            img {
-                                border-radius: 50%;
-                                height: auto;
-                            }
-                        }
-            .section-feetback-block-right img {
-                height: 60px;
-            }
-    }
-    .section-feedback-slider {
-        margin-top: -95px;
-        padding: 110px 20px 20px;
-        border-radius: 15px;
-        background: #fff;
-        text-align: center;
-        .section-feedback-slider-author {
-            font-size: 18px;
-            font-weight: 700;
-        }
-        .section-feedback-slider-stars {
-            padding-bottom: 10px;
-        }
-        .section-feedback-slider-text {
-            font-size: 18px;
+@import "swiper/swiper-bundle.css";
 
-        }
-    }
+.section-feedback {
+  padding: 40px 20px 65px;
+  background: #ff5050 url("../../../assets/reviews_bg.jpeg") center bottom
+    no-repeat;
+  text-align: center;
+
+  h2 {
+    font-size: 30px;
+    line-height: 42px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+    width: 400px;
+  }
 }
+
+.swiper-container {
+  padding: 0 20px 20px;
+  border-radius: 15px;
+  background: #fff;
+  text-align: center;
+}
+.im {
+  border-radius: 50%;
+  margin-top: 25px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  // box-shadow: 1px 2px 5px rgb(0 0 0 / 10%);
+  // position: relative;
+  img {
+    margin-top: -85px;
+    border-radius: 50%;
+    margin: 0 0 10px;
+    z-index: 99999999;
+    border-radius: 50%;
+  }
+}
+.title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.stars {
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+// }

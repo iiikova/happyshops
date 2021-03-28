@@ -1,12 +1,11 @@
 .section-footer {
-    padding: 40px 0;
-    font-size: 14px;
-    color: black;
-    .section-footer-subtitle:last-child {
-        padding-bottom: 14px;
-
-    }
-    .section-footer-politics {
-        text-decoration: underline
-    }
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  a {
+    color: #111;
+    display: block;
+    margin: 10px;
+    text-decoration: underline;
+  }
 }

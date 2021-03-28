@@ -1,11 +1,43 @@
 .section-desc {
+  font-size: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  .section-desc-img-one {
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    .video {
+      width: 410px;
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    img:last-child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 77px;
+      width: 77px;
+      opacity: 0.5;
+    }
+  }
+}
+.section-desc-img-two {
+  display: block;
+  padding: 0px 20px;
+  img {
+    width: 95%;
+  }
+  p {
+    padding-bottom: 20px;
+    font-weight: 400;
     font-size: 18px;
-    .section-desc-img-one {
-
-    }
-    .section-desc-img-two {}
-    .section-desc-text {
-        padding: 0 20px 20px 20px;
-    }
-
+    line-height: 1.4em;
+    color: #333;
+    cursor: default;
+  }
 }

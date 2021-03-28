@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SwiperModule } from 'swiper/angular';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+
+// import { VideoComponent } from './video.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +18,7 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { OrderComponent } from './components/order/order.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormWindowComponent } from './form-window/form-window.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +32,17 @@ import { FooterComponent } from './components/footer/footer.component';
     FeedbackComponent,
     OrderComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    FormWindowComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SwiperModule,
+    YouTubePlayerModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

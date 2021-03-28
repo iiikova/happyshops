@@ -1,47 +1,53 @@
 .section-order {
-    .section-order-title {
-            font-size: 30px;
-            line-height: 42px;
-            color: #ca1776;
-            font-weight: 700;
-            padding: 30px 10px ;
-            
-    }
-    .section-order-items {
-            padding: 0px 10px ;
-        .section-order-item {
-            display: flex;
-            flex-direction: row;
-            padding: 10px 10px ;
+  padding: 30px 20px;
+  h2 {
+    font-size: 30px;
+    line-height: 42px;
+    color: #ca1776;
+    font-weight: 700;
+    padding: 30px 10px;
+    margin: 0;
+  }
+  .section-order-items {
+    // padding: 0px 10px;
+    .section-order-item {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px;
 
-            .section-order-item-icon {
-                margin: -4px 16px 0 -4px;
-            }
-            .section-order-item-text {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 1.4em;
-                color: #333;
-                text-align: left;
-            }
-            .section-order-item-inner {
-                display: flex;
-                flex-direction: column;
-                    text-align: left;
+      .section-order-item-icon img {
+        display: block;
+        float: left;
+        margin: -4px 16px 0 -4px;
+        width: 83px;
+      }
+      .section-order-item-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4em;
+        color: #333;
+        text-align: left;
+      }
+      .section-order-item-inner {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
 
-              .section-order-item-inner-title {
-                    margin: 0 0 5px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-              }  
-              .section-order-item-inner-text {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 1.4em;
-                    color: #333;
-                    cursor: default;
-              }  
-            }
+        .section-order-item-inner-title {
+          color: #333;
+          font-size: 18px;
+          margin: 0 0 5px;
+          font-weight: 700;
+          text-transform: uppercase;
         }
+        .section-order-item-inner-text {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.4em;
+          color: #333;
+          cursor: default;
+        }
+      }
     }
+  }
 }

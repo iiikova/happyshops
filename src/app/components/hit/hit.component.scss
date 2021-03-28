@@ -1,65 +1,140 @@
 .section-hit {
-    background: rgb(123, 31, 162);
-    .section-hit-wrapper {
-        padding-top: 30px;
-        padding-bottom: 40px;
-        width: 90%;
-        margin: 0 auto;
-        .section-hit-title {
-            width: 190px;
-            margin: 10px auto;
-            background: #ed2150;
-            color: #fff;
-            font-weight: 700;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 28px;
+  background: rgb(123, 31, 162);
+  margin-top: -30px;
+  .section-hit-wrapper {
+    .section-header-dicount {
+      margin: -45px auto 25px;
+      width: 400px;
+      text-align: center;
+      position: relative;
+      display: flex;
+
+      .section-header-dicount-left {
+        padding: 0px 40px 0 0;
+        border-radius: 40px 0 0 40px;
+        background: #3c7298;
+        height: 80px;
+        width: 200px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .section-header-dicount-left-text {
+          margin: 10px 0 4px;
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
         }
-        .section-hit-list {
-            text-align: left;
-            line-height: 2rem;
-            font-size: 18px;
-            font-weight: 400;
-                ul {
-                    margin: 30px 40px 30px;
-                    li {
-                        font-size: 16px;
-                        color: #fff;
-                        // background: url(../images/check.png) no-repeat 0 2px;
-                        padding: 0 0 0 30px;
-                        margin-bottom: 12px;
-                        }
-                    }
-                }
-                .section-hit-button {
-                    display: flex;
-                    justify-content: center;
-                    button {
-                        display: block;
-                        margin: 0 auto;
-                        width: 400px;
-                        height: 80px;
-                        border: none;
-                        -webkit-border-radius: 40px;
-                        -moz-border-radius: 40px;
-                        border-radius: 40px;
-                        background: #f9c802;
-                        -webkit-box-shadow: 0 4px 0 #f9a502;
-                        -moz-box-shadow: 0 4px 0 #f9a502;
-                        box-shadow: 0 4px 0 #f9a502;
-                        font-family: 'Gotham Pro', sans-serif;
-                        font-weight: 700;
-                        font-size: 20px;
-                        line-height: 80px;
-                        letter-spacing: 1px;
-                        color: #724b00;
-                        text-shadow: 0 2px 0 #fad334;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        text-align: center;
-    cursor: pointer;
-                    }
-                }
-            }
-        
+        .section-header-dicount-left-price {
+          font-size: 23px;
+          text-decoration: line-through;
+        }
+      }
+      .section-header-dicount-center {
+        padding: 28px 0 0;
+        width: 94px;
+        height: 100px;
+        background: url("../../../assets/offer__discount_bg.png") center
+          no-repeat;
+        font-weight: 700;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -47px;
+        color: #333333;
+        .center_text {
+          margin: 0 0 5px;
+          font-size: 14px;
+          line-height: 14px;
+          margin-top: 3px;
+        }
+        .center_value {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+      .section-header-dicount-right {
+        padding: 0px 0 0 40px;
+        border-radius: 0 40px 40px 0;
+        background: #ed2171;
+        font-weight: 700;
+        height: 80px;
+        width: 200px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .section-header-dicount-left-text {
+          margin: 10px 0 4px;
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .section-header-dicount-left-price {
+          font-size: 23px;
+          font-weight: 700;
+        }
+      }
+    }
+    .section-hit-title {
+      width: 190px;
+      margin: 30px auto;
+      background: #ed2150;
+      color: #fff;
+      font-weight: 700;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 28px;
+    }
+    .section-hit-list {
+      text-align: left;
+      line-height: 2rem;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 30px 40px 30px;
+      ul {
+        li {
+          list-style: none;
+          font-size: 16px;
+          color: #fff;
+          background: url("../../../assets/check.png") no-repeat 0 6px;
+          padding: 0 0 0 30px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .section-hit-button {
+      display: flex;
+      justify-content: center;
+      padding: 0 0 24px;
+      background: url("../../../assets/button_shadow.png") center bottom
+        no-repeat;
+      position: relative;
+      z-index: 10;
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 80px;
+        border: none;
+        border-radius: 40px;
+        background: #f9c802;
+        box-shadow: 0 4px 0 #f9a502;
+        font-family: "Gotham Pro", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 80px;
+        letter-spacing: 1px;
+        color: #724b00;
+        text-shadow: 0 2px 0 #fad334;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
 }
