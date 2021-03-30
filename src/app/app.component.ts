@@ -28,17 +28,17 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    // const showBanner = interval(10000);
-    // showBanner.subscribe(() => {
-    //   return this.showPop();
-    // });
-    // const showForm = interval(20000);
-    // showForm.subscribe(() => {
-    //   return this.showForm();
-    // });
-    // const showCall = interval(30000);
-    // showCall.subscribe(() => {
-    //   return this.showCall();
-    // });
+    const showBanner = interval(10000);
+    showBanner.subscribe(() => {
+      return this.showPop();
+    });
+    const showForm = interval(20000);
+    showForm.subscribe(() => {
+      return this.showForm();
+    });
+    const showCall = interval(30000);
+    showCall.subscribe(() => {
+      return this.showCall();
+    });
   }
 }

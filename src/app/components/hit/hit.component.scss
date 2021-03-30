@@ -94,8 +94,10 @@
       line-height: 2rem;
       font-size: 18px;
       font-weight: 400;
-      margin: 30px 40px 30px;
+      margin: 30px 20px 30px;
       ul {
+        text-align: left;
+
         li {
           list-style: none;
           font-size: 16px;
@@ -113,7 +115,6 @@
       background: url("../../../assets/button_shadow.png") center bottom
         no-repeat;
       position: relative;
-      z-index: 10;
       button {
         display: block;
         margin: 0 auto;

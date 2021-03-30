@@ -1,63 +1,70 @@
 <section class="section-feedback">
     <h2><b>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</b></h2>
-    <div class="swiper-container">
 
-        <swiper [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
-            [navigation]="true">
-            <ng-template swiperSlide class='slide-item'>
-                <div class="im">
-                    <img src="../../../assets/clients_img/rvv1.jpg" alt="">
+    <div id="myCarousel" class="carousel slide" data-bs-ride='carousel'>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="author">
+                        <img src="../../../assets/clients_img/rvv1.jpg" alt="">
+                    </div>
+                    <div class="title">ЮЛИЯ СМИРНОВА</div>
+                    <div class="stars">
+                        <img src="././../../../assets/reviews__stars.png" alt="">
+                    </div>
+                    <div class="text">Купила сыну на день рождения этот творческий набор. Он остался очень доволен.
+                        Теперь таскает его
+                        везде, так как все
+                        составляющие набора удобно складываются в один чемоданчик. Также он стал гораздо меньше теперь
+                        играть в компьютер,
+                        рисует без конца. Большое спасибо вам за такую замечательную и полезную игрушку!</div>
                 </div>
-                <div class="title">ЮЛИЯ СМИРНОВА</div>
-                <div class="stars">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
+            </div>
+            <div class="carousel-item ">
+                <div class="container">
+                    <div class="author">
+                        <img src="../../../assets/clients_img/rvv2.jpg" alt="">
+                    </div>
+                    <div class="title">КАРИНА ТИХОМИРОВА</div>
+                    <div class="stars">
+                        <img src="././../../../assets/reviews__stars.png" alt="">
+                    </div>
+                    <div class="text">Очень хороший и удобный набор, как для дома, так и для школы. Отличное качество за
+                        такие деньги.
+                        Давно искала, что-то
+                        подобное в городских магазинах игрушек, но там такие цены заламывают, что аж плакать хочется.
+                        Очень переживала, что
+                        будет плохого качества, но материал оказался хороший, а не просто дешевый пластик. Рекомендую!
+                    </div>
                 </div>
-                <div class="text">Купила сыну на день рождения этот творческий набор. Он остался очень доволен. Теперь
-                    таскает его везде, так как все
-                    составляющие набора удобно складываются в один чемоданчик. Также он стал гораздо меньше теперь
-                    играть в компьютер,
-                    рисует без конца. Большое спасибо вам за такую замечательную и полезную игрушку!</div>
-            </ng-template>
-            <ng-template swiperSlide class='slide-item'>
-                <div class="im">
-                    <img src="../../../assets/clients_img/rvv2.jpg" alt="">
+            </div>
+            <div class="carousel-item ">
+                <div class="container">
+                    <div class="author">
+                        <img src="../../../assets/clients_img/rvv3.jpg" alt="">
+                    </div>
+                    <div class="title">ИРИНА МАТВЕЕВА</div>
+                    <div class="stars">
+                        <img src="././../../../assets/reviews__stars.png" alt="">
+                    </div>
+                    <div class="text">Моя дочь большая любительница порисовать, поэтому для своей юной художницы я
+                        решила купить этот комплект с мольбертом.
+                        Теперь это наша любимая игрушка! Незаменимая вещь, берем его во все поездки: и в отпуск, и на
+                        дачу - компактно и
+                        функционально!:) Однозначно рекомендую в подарок всем творческим деткам)</div>
                 </div>
-                <div class="title">КАРИНА ТИХОМИРОВА</div>
-                <div class="stars">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                </div>
-                <div class="text">Очень хороший и удобный набор, как для дома, так и для школы. Отличное качество за
-                    такие деньги. Давно искала, что-то
-                    подобное в городских магазинах игрушек, но там такие цены заламывают, что аж плакать хочется. Очень
-                    переживала, что
-                    будет плохого качества, но материал оказался хороший, а не просто дешевый пластик. Рекомендую!</div>
-            </ng-template>
-            <ng-template swiperSlide class='slide-item'>
-                <div class="im">
-                    <img src="../../../assets/clients_img/rvv3.jpg" alt="">
-                </div>
-                <div class="title">ИРИНА МАТВЕЕВА</div>
-                <div class="stars">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                    <img src="../../../assets/icons/star.svg" alt="">
-                </div>
-                <div class="text">Моя дочь большая любительница порисовать, поэтому для своей юной художницы я решила
-                    купить этот комплект с мольбертом.
-                    Теперь это наша любимая игрушка! Незаменимая вещь, берем его во все поездки: и в отпуск, и на дачу -
-                    компактно и
-                    функционально!:) Однозначно рекомендую в подарок всем творческим деткам)</div>
-            </ng-template>
-        </swiper>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <img src="../../../assets/icons/arrow_left.svg" alt="">
+            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <img src="../../../assets/icons/arrow+right.svg" alt="">
+            <span class="visually-hidden">Previous</span>
+        </button>
     </div>
+
+
 </section>

@@ -1,5 +1,5 @@
 .section-order {
-  padding: 30px 20px;
+  padding: 30px 10px;
   h2 {
     font-size: 30px;
     line-height: 42px;
@@ -9,7 +9,6 @@
     margin: 0;
   }
   .section-order-items {
-    // padding: 0px 10px;
     .section-order-item {
       display: flex;
       flex-direction: row;
@@ -41,7 +40,7 @@
           text-transform: uppercase;
         }
         .section-order-item-inner-text {
-          font-weight: 400;
+          font-weight: 300;
           font-size: 18px;
           line-height: 1.4em;
           color: #333;

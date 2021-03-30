@@ -18,7 +18,6 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { OrderComponent } from './components/order/order.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FormWindowComponent } from './form-window/form-window.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { FormWindowComponent } from './form-window/form-window.component';
     OrderComponent,
     FormComponent,
     FooterComponent,
-    FormWindowComponent,
   ],
   imports: [
     BrowserModule,
